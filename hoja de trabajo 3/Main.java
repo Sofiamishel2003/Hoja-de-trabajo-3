@@ -9,20 +9,18 @@ public class Main {
         String numeros_random="";
         archivo file = new archivo();
         Random random = new Random();
-        //Pregunta la cantidad de números a calcular 
-        Scanner in = new Scanner(System.in);
-        System.out.println("Ingrese el path");
-        int cantidad = in.nextInt();
+        //cantidad de numeros a calcular
+        int cantidad = 10;
         ArrayList<String> lineas;
-        for(int i = 0; i < 3000; i++)
+        for(int i = 0; i < cantidad; i++)
         {
-            int value = random.nextInt(3000 + 1) + 1;
+            int value = random.nextInt(cantidad + 1) + 1;
             numeros_random=numeros_random+value+" ";
         }
         //Creación de archivo, verifica si existe usa ese y si no crea uno nuevo.
         file.create_file(); //tiene que crear el archivo antes que nada
         file.write_file(numeros_random); //tiene que 
-        int[] arr = new int[3000];
+        int[] arr = new int[cantidad];
         int n = arr.length;
         int j=0;
         lineas=file.read_file();
