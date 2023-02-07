@@ -10,7 +10,7 @@ public class Main {
         archivo file = new archivo();
         Random random = new Random();
         //cantidad de numeros a calcular
-        int cantidad = 10;
+        int cantidad = 3000;
         ArrayList<String> lineas;
         for(int i = 0; i < cantidad; i++)
         {
