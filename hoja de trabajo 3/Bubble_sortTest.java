@@ -1,7 +1,18 @@
+//
+//
+//  @ Project : hoja de trabajo 3
+//  @ File Name : Bubble_sortTest.java
+//  @ Date : 7/02/2023
+//  @ Author : Sofía Velásquez, Joaquín Campos, Julio García Salas
+//
+//
 import org.junit.Test;
 import java.util.Arrays;
 public class Bubble_sortTest{
     Bubble_sort burbuja = new Bubble_sort();
+    /**
+     *  Test del metodo bubble sort para ver si funciona bien o no
+     */
     @Test
     public void testBubblesort()
     {

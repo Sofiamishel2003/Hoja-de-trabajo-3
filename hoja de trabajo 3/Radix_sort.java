@@ -1,6 +1,19 @@
+//
+//
+//  @ Project : hoja de trabajo 3
+//  @ File Name : Radix_sort.java
+//  @ Date : 7/02/2023
+//  @ Author : Sofía Velásquez, Joaquín Campos, Julio García Salas
+//
+//
 import java.io.*;
 import java.util.*;
 public class Radix_sort {
+    /**
+     * @param arr
+     * @param n
+     * @return
+     */
     static int maxi(int arr[], int n)
     {
         int mx = arr[0];
@@ -9,6 +22,11 @@ public class Radix_sort {
                 mx = arr[i];
         return mx;
     }
+    /**
+     * @param arr
+     * @param n
+     * @param exp
+     */
     static void countSort(int arr[], int n, int exp)
     {
         int output[] = new int[n]; // output array
@@ -34,7 +52,9 @@ public class Radix_sort {
         return arr;
 
     }
- 
+    /**
+     * @param arr se usa este método para poder pasar el array a algo más visible con un for
+     */
    public String show(int[] arr)
     {
         int n = arr.length;

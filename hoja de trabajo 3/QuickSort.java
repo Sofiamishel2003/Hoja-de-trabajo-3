@@ -1,5 +1,19 @@
+//
+//
+//  @ Project : hoja de trabajo 3
+//  @ File Name : QuickSort.java
+//  @ Date : 7/02/2023
+//  @ Author : Sofía Velásquez, Joaquín Campos, Julio García Salas
+//
+//
 public class QuickSort 
 {
+     /**
+     * @param A
+     * @param izq
+     * @param der
+     * @return se introduce como parametro el array, y un elemento de la izquierda y otro de la derecha
+     */
     public int[] quicksort(int A[], int izq, int der) {
 
         int pivote=A[izq]; // tomamos primer elemento como pivote
@@ -26,6 +40,9 @@ public class QuickSort
             quicksort(A,j+1,der);          //  subarray derecho
          return A;
       }
+      /**
+     * @param arr se utiliza este método con un for para poder pasar el array a algo más visible
+     */
       public String show(int[] arr)
         {
         int n = arr.length;

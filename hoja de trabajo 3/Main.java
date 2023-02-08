@@ -1,8 +1,19 @@
+//
+//
+//  @ Project : hoja de trabajo 3
+//  @ File Name : Main.java
+//  @ Date : 7/02/2023
+//  @ Author : Sofía Velásquez, Joaquín Campos, Julio García Salas
+//
+//
 import java.util.Random;
 import java.util.ArrayList; //Import Arraylist
 import java.util.Scanner;
 
 public class Main {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) 
     {
         //Numeros random en un string listos para escribir en el archivo

@@ -1,4 +1,17 @@
+//
+//
+//  @ Project : hoja de trabajo 3
+//  @ File Name : Gnome_sort.java
+//  @ Date : 7/02/2023
+//  @ Author : Sofía Velásquez, Joaquín Campos, Julio García Salas
+//
+//
 public class Gnome_sort {
+    /** 
+     * @param sort_arr
+     * @param len
+     * @return int[] método que usa como parametro el array donde están los números y la longitud del mismo
+     */
     public int[] GnomeSort(int[] sort_arr, int len)
     {
         int index = 0;
@@ -18,6 +31,9 @@ public class Gnome_sort {
         }
         return sort_arr;
     }
+    /**
+     * @param arr método para pasar el array a algo más visible con un for
+     */
    public String show(int[] arr)
     {
         int n = arr.length;

@@ -1,7 +1,18 @@
+//
+//
+//  @ Project : hoja de trabajo 3
+//  @ File Name : Merge_sortTest.java
+//  @ Date : 7/02/2023
+//  @ Author : Sofía Velásquez, Joaquín Campos, Julio García Salas
+//
+//
 import org.junit.Test;
 import java.util.Arrays;
 public class Merge_sortTest{
     Merge_sort merge = new Merge_sort();
+    /**
+     * método para poder comprobar si el método mergeSort funciona o no
+     */
     @Test
     public void mergesortTest()
     {

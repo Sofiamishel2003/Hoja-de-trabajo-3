@@ -1,4 +1,11 @@
-
+//
+//
+//  @ Project : hoja de trabajo 3
+//  @ File Name : archivo.java
+//  @ Date : 7/02/2023
+//  @ Author : Sofía Velásquez, Joaquín Campos, Julio García Salas
+//
+//
 import java.io.File;  // Import the File class
 import java.io.FileWriter;   // Import the FileWriter class
 import java.io.IOException;  // Import the IOException class to handle errors
@@ -15,6 +22,9 @@ public class archivo {
         path="";
 
     }
+      /**
+   *  se crea un archivo si no existe uno nuevo con este método
+   */
   public void create_file() {
     try {
       archivito = new File("numeros_3000.txt");
@@ -31,6 +41,10 @@ public class archivo {
       e.printStackTrace();
     }
   }
+    
+  /** 
+   * @param texto el método introduce como método un string para pdoer escribir en el archivo numeros_3000
+   */
   public void write_file(String texto) {
     try {
       FileWriter myWriter = new FileWriter("numeros_3000.txt");
@@ -42,6 +56,9 @@ public class archivo {
       e.printStackTrace();
     }
   }
+   /**
+   * @return este método lee el archivo y si no existe un archivo tira una excepcepción
+   */
   public ArrayList<String> read_file() {
     File file = new File("numeros_3000.txt");
         try {
