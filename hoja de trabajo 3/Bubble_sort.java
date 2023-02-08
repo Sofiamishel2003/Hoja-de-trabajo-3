@@ -16,11 +16,16 @@ public class Bubble_sort {
         }
         return sort_arr;
     }
-    public void show(int[] arr)
+    public String show(int[] arr)
     {
         int n = arr.length;
+        String text="";
         for (int i = 0; i < n; ++i)
+        {
             System.out.print(arr[i] + " ");
+            text = text + arr[i] + " ";
+        }
         System.out.println();
+        return  text;
     }
 }
