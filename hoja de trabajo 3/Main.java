@@ -19,7 +19,7 @@ public class Main {
         }
         //Creación de archivo, verifica si existe usa ese y si no crea uno nuevo.
         file.create_file(); //tiene que crear el archivo antes que nada
-        file.write_file(numeros_random); //tiene que 
+        file.write_file(numeros_random); //tiene que comentarearse la segunda vez que se corra para ver el tiempo con los numeros ordenados
         int[] arr = new int[cantidad];
         int n = arr.length;
         int j=0;
