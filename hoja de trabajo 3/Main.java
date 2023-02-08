@@ -33,26 +33,35 @@ public class Main {
                 j=j+1;
             }
 	      }
-        //---------------Gnome
-        Gnome_sort gnome = new Gnome_sort();
-        int arr2[] =gnome.GnomeSort(arr, n);
-        gnome.show(arr2);
-        //---------------Radix
-        //Radix_sort radix = new Radix_sort();
-        //int arr2[] =radix.radixsort(arr, n);
-        //radix.show(arr2);
-        //---------------Bubble
-        //Bubble_sort burbuja = new Bubble_sort();
-        //int arr2[] =burbuja.bubbleSort(arr, n);
-        //burbuja.show(arr2);
-        //---------------Merge
+      	 //---------------Gnome---------------------------------------
+       	//int arr2[] = sort.GnomeSort(arr, n);
+       	//System.out.println(sort.show(arr2));
+       	//sc.nextLine();
+       	//file.write_file(sort.show(arr2));
+        //---------------Radix---------------------------------------
+        //Radix_sort sort = new Radix_sort();
+        //int arr2[] =sort.radixsort(arr, n);
+        // sc.nextLine();
+        //sort.show(arr2);
+        //file.write_file(sort.show(arr2));
+        //---------------Bubble---------------------------------------
+        Bubble_sort burbuja = new Bubble_sort();
+        int arr2[] =burbuja.bubbleSort(arr, n);
+        sc.nextLine();
+        burbuja.show(arr2);
+        file.write_file(burbuja.show(arr2));
+        //---------------Merge---------------------------------------
         //Merge_sort merge = new Merge_sort();
         //int arr2[] =merge.mergeSort(arr, 0, n - 1);
+        //sc.nextLine();
         //merge.show(arr2);
-        //---------------Quick
+        //file.write_file(merge.show(arr2));
+        //---------------Quick---------------------------------------
         //QuickSort quick = new QuickSort();
         //int arr2[] =quick.quicksort(arr,0, n-1);
+        //sc.nextLine();
         //quick.show(arr2);
+        //file.write_file(quick.show(arr2));
     }
 }
 
