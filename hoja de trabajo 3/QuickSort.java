@@ -26,13 +26,18 @@ public class QuickSort
             quicksort(A,j+1,der);          //  subarray derecho
          return A;
       }
-      public  void show(int[] arr)
-    {
+      public String show(int[] arr)
+        {
         int n = arr.length;
+        String text="";
         for (int i = 0; i < n; ++i)
+        {
             System.out.print(arr[i] + " ");
+            text = text + arr[i] + " ";
+        }
         System.out.println();
-    }
+        return  text;
+        }
 }
 //fuente de codigo:http://puntocomnoesunlenguaje.blogspot.com/2012/12/java-quicksort.html
 //Algoritmo de Quick sort encontrado en google.
